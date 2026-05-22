@@ -2,11 +2,23 @@
 
 int main()
 {
-    int a = 5;
-    float b = 6.7;
-    char c = 'S';
-    long int l;
-    long long int ll;
-    printf(" %d  %f %c %ld %ld\n",a,b,c,sizeof(l),sizeof(ll));
+    int i,j;
+    for(int k =0; k<2;k++)
+    {
+        for(i=1; i<8;i++)
+        {
+            for(j=0;j<i;j++)
+            {
+                printf("*");
+            }
+            printf("\n");
+        }
+    }
+    for(i = 0;  i<4; i++)
+    {
+    printf("*\n");
+
+    }
+    printf("\n");
     return 0;
 }
