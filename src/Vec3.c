@@ -1,5 +1,4 @@
  #include"vec3.h"
-
 #include <math.h>
 
  vec3 vec3_add( vec3 vec, vec3 vec2)
@@ -47,4 +46,12 @@ vec3 vec3_normalize( vec3 vec)
 float vec3_length( vec3 vec)
 {
     return sqrt(vec.x*vec.x + vec.y*vec.y + vec.z*vec.z);
+}
+
+float vec3_distance(vec3 A, vec3 B)
+{
+    vec3 temp;
+    temp = (vec3) { A.x-B.x,A.y -B.y, A.z- B.z };
+    
+    return vec3_length(temp);
 }
